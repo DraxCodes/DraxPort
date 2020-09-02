@@ -1,0 +1,26 @@
+﻿@inject NavigationManager PageNavigationManager
+
+<nav class="navbar navbar-expand orange navbar-light">
+    <a class="navbar-brand" href="/"><span class="text-muted">Drax</span>Port</a>
+
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Counter">Counter</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/FetchData">Data</a>
+        </li>
+    </ul>
+    <button type="button" class="btn btn-dark">Logout</button>
+</nav>
+
+@code {
+
+    protected override Task OnInitializedAsync()
+    {
+        return base.OnInitializedAsync();
+    }
+}

@@ -1,0 +1,35 @@
+﻿@page "/counter"
+
+    <div class="d-flex justify-content-center">
+        <div class="container w-25 h-50 mt-2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Current count</h4>
+                            <p class="card-text">
+                                @currentCount
+                            </p>
+                            <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    @code {
+        private int currentCount = 0;
+
+        private void IncrementCount()
+        {
+            currentCount++;
+        }
+    }
